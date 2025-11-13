@@ -48,16 +48,27 @@ Aucun autre outil ou langage n’a été utilisé : tout le projet repose unique
 MATCH (n)
 RETURN n
 LIMIT 100;
+```
 <img width="1209" height="568" alt="Capture d&#39;écran 2025-11-13 150031" src="https://github.com/user-attachments/assets/406b600b-4cfa-43bd-a447-0089a4d87ab1" />
 
 ### 2️⃣ Afficher toutes les relations
-
+```cypher
+MATCH (a)-[r]->(b)
+RETURN a, r, b
+LIMIT 50;
+```
 <img width="1212" height="573" alt="Capture d&#39;écran 2025-11-13 150017" src="https://github.com/user-attachments/assets/e78c642f-5845-4f7c-8a44-9649b090f7f8" />
 
 ### 3️⃣ Voir les étudiants de Godolkin University
-
+```cypher
+MATCH (p:Person)-[:STUDIES_AT]->(g:Group {name:"Godolkin University"})
+RETURN p, g;
+```
 <img width="1212" height="577" alt="Capture d&#39;écran 2025-11-13 151747" src="https://github.com/user-attachments/assets/e040ab98-d73d-4a7a-8e0c-ca4d17572d51" />
 
 ### 4️⃣ Lister les pouvoirs de chaque personnage
-
+```cypher
+MATCH (p:Person)-[:HAS_POWER]->(pow:Power)
+RETURN p.name AS Personnage, collect(pow.name) AS Pouvoirs;
+```
 <img width="1206" height="492" alt="Capture d&#39;écran 2025-11-13 151857" src="https://github.com/user-attachments/assets/367b56d3-ab0e-4e7c-bc0e-49462e3fa6f0" />
