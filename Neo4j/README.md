@@ -1,23 +1,23 @@
-# 🧬 Base de Données Neo4j — *Gen V* (Amazon Prime)
+#  Base de Données Neo4j — *Gen V* (Amazon Prime)
 
-## 🎯 Objectif
+##  Objectif
 
 Ce projet a pour but de modéliser l’univers de la série **Gen V** à l’aide de **Neo4j**, une base de données orientée graphes.  
 L’objectif est de représenter les **personnages**, leurs **pouvoirs**, leurs **relations**, et les **organisations** de l’univers de la série.
 
 ---
 
-## ⚙️ Outils utilisés
+##  Outils utilisés
 
-- 🟣 **Neo4j Desktop** (ou Neo4j Browser)
-- 💬 **Langage : Cypher**
-- 📸 **Captures d’écran** des résultats de requêtes
+-  **Neo4j Desktop** (ou Neo4j Browser)
+-  **Langage : Cypher**
+-  **Captures d’écran** des résultats de requêtes
 
 Aucun autre outil ou langage n’a été utilisé : tout le projet repose uniquement sur Neo4j.
 
 ---
 
-## 🧱 Structure du graphe
+##  Structure du graphe
 
 ### Types de nœuds (Labels)
 | Label | Description |
@@ -41,7 +41,7 @@ Aucun autre outil ou langage n’a été utilisé : tout le projet repose unique
 
 ---
 
-## 🔍 Exemples de requêtes utilisées
+##  Exemples de requêtes utilisées
 
 ### 1️⃣ Afficher tous les nœuds
 ```cypher
